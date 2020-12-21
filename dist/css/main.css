@@ -20,10 +20,7 @@ body a {
   border: none;
   height: 4rem;
   width: 14rem;
-  border-top-left-radius: 2rem 50%;
-  border-top-right-radius: 2rem 50%;
-  border-bottom-left-radius: 2rem 50%;
-  border-bottom-right-radius: 2rem 50%;
+  border-radius: 2rem;
 }
 
 * {
@@ -113,7 +110,7 @@ main #about .container .title p {
 main #about .container .wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 4rem auto 4rem;
+  margin: 4rem auto;
 }
 main #about .container .wrapper .about-services {
   width: 30%;
@@ -207,37 +204,35 @@ main #portfolio .wrapper .left .portfolio-about p {
 main #portfolio .wrapper .left .portfolio-about ul li {
   display: flex;
 }
-main #portfolio .wrapper .left .portfolio-about ul li .fa-shopping-basket {
-  padding: 10px 15px 10px 10px;
-  border: 2px solid black;
+main #portfolio .wrapper .left .portfolio-about ul li .circle {
+  display: table;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000;
   border-radius: 50%;
-  width: 30px;
-  height: 35px;
   margin-right: 10px;
 }
+main #portfolio .wrapper .left .portfolio-about ul li .fa-shopping-basket {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 main #portfolio .wrapper .left .portfolio-about ul li .fa-laptop {
-  padding: 10px 17px 10px 8px;
-  border: 2px solid black;
-  border-radius: 50%;
-  width: 30px;
-  height: 35px;
-  margin-right: 10px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
   position: relative;
 }
 main #portfolio .wrapper .left .portfolio-about ul li .fa-laptop .fa-check {
   position: absolute;
-  top: 13px;
-  left: 18px;
+  left: 13px;
+  top: 10px;
   font-size: 20px;
 }
 main #portfolio .wrapper .left .portfolio-about ul li .fa-lock {
-  padding: 10px 13px 10px 13px;
-  border: 2px solid black;
-  border-radius: 50%;
-  width: 30px;
-  height: 35px;
-  margin-right: 10px;
-  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 main #portfolio .wrapper .left .portfolio-about ul li p {
   margin-top: 10px;
@@ -247,6 +242,7 @@ main #portfolio .wrapper .left .portfolio-about ul li p {
 }
 main #portfolio .wrapper .left .portfolio-about ul li p span {
   color: #000;
+  font-weight: bold;
 }
 main #portfolio .wrapper .left .portfolio-about a {
   color: #7cc576;

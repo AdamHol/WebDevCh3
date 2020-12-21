@@ -102,7 +102,7 @@ main {
       .wrapper {
         display: flex;
         justify-content: space-between;
-        margin: 4rem auto 4rem;
+        margin: 4rem auto;
 
         .about-services {
           width: 30%;
@@ -215,40 +215,39 @@ main {
             li {
               display: flex;
 
-              .fa-shopping-basket {
-                padding: 10px 15px 10px 10px;
-                border: 2px solid black;
+              .circle {
+                display: table;
+                height: 50px;
+                width: 50px;
+                border: 2px solid #000;
                 border-radius: 50%;
-                width: 30px;
-                height: 35px;
                 margin-right: 10px;
               }
 
+              .fa-shopping-basket {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+              }
+
               .fa-laptop {
-                padding: 10px 17px 10px 8px;
-                border: 2px solid black;
-                border-radius: 50%;
-                width: 30px;
-                height: 35px;
-                margin-right: 10px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
                 position: relative;
 
                 .fa-check {
                   position: absolute;
-                  top: 13px;
-                  left: 18px;
+                  left: 13px;
+                  top: 10px;
                   font-size: 20px;
                 }
               }
 
               .fa-lock {
-                padding: 10px 13px 10px 13px;
-                border: 2px solid black;
-                border-radius: 50%;
-                width: 30px;
-                height: 35px;
-                margin-right: 10px;
-                position: relative;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
               }
               p {
                 margin-top: 10px;
@@ -258,6 +257,7 @@ main {
 
                 span {
                   color: #000;
+                  font-weight: bold;
                 }
               }
             }
