@@ -1,0 +1,259 @@
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 4rem;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.btn {
+  background: #7cc576;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  height: 4rem;
+  width: 14rem;
+  border-top-left-radius: 2rem 50%;
+  border-top-right-radius: 2rem 50%;
+  border-bottom-left-radius: 2rem 50%;
+  border-bottom-right-radius: 2rem 50%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: #fff;
+  margin-top: 0;
+  width: 100%;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+header .container .logo {
+  margin: auto 0;
+}
+header .container ul {
+  padding: 10px 0;
+  display: flex;
+}
+header .container ul li {
+  padding: 0 1.5rem;
+  border-bottom: 2px solid transparent;
+}
+header .container ul li a {
+  padding: 0 0 4px 0;
+}
+header .container ul li .current {
+  border-bottom: 2px solid #7cc576;
+}
+
+main {
+  padding-top: 100px;
+}
+main #home .main-bg {
+  background: url("../img/main-Background.png") center center no-repeat;
+  height: 50vh;
+}
+main #home .main-bg-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: inherit;
+  text-align: center;
+  width: 100%;
+}
+main #home .main-bg-dark-inner {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #home .main-bg-dark-inner h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+main #home .main-bg-dark-inner p {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #ddd;
+}
+main #about .container {
+  text-align: center;
+}
+main #about .container .title h2 {
+  font-weight: bold;
+  padding-top: 2rem;
+  margin-bottom: 0;
+}
+main #about .container .title p {
+  color: #777777;
+  margin-top: 0;
+  font-weight: bold;
+}
+main #about .container .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto 4rem;
+}
+main #about .container .wrapper .about-services {
+  width: 30%;
+}
+main #about .container .wrapper .about-services i {
+  margin-bottom: 1rem;
+}
+main #about .container .wrapper .about-services h3 {
+  font-size: 1rem;
+}
+main #blog {
+  color: #fff;
+}
+main #blog .bg {
+  display: flex;
+}
+main #blog .bg .left {
+  width: 25%;
+  background: #eee;
+  position: relative;
+  z-index: -1;
+}
+main #blog .bg .left img {
+  position: absolute;
+  height: 80%;
+  width: 400px;
+  right: -200px;
+  top: 10%;
+}
+main #blog .bg .right {
+  background: url("../img/blog-bg.png") no-repeat center center/cover;
+  width: 75%;
+}
+main #blog .bg .right-dark {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+main #blog .bg .right-dark h2 {
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+main #blog .bg .right-dark h2 span {
+  color: #7cc576;
+}
+main #blog .bg .right-dark p {
+  width: 80%;
+  color: #cccccc;
+  line-height: 1.2rem;
+}
+main #blog .bg .right-dark ul {
+  color: #cccccc;
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+main #blog .bg .right-dark ul li {
+  display: flex;
+  padding-top: 10px;
+}
+main #blog .bg .right-dark ul li .far {
+  margin-right: 20px;
+}
+main #blog .bg .right-dark .btn {
+  margin: 50px 0;
+}
+main #portfolio .title {
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 0;
+}
+main #portfolio .title p {
+  color: #777777;
+}
+main #portfolio .wrapper {
+  display: flex;
+}
+main #portfolio .wrapper .left {
+  width: 50%;
+}
+main #portfolio .wrapper .left .portfolio-about h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+main #portfolio .wrapper .left .portfolio-about p {
+  color: #777777;
+  margin: 20px 0;
+}
+main #portfolio .wrapper .left .portfolio-about ul li {
+  display: flex;
+}
+main #portfolio .wrapper .left .portfolio-about ul li .fa-shopping-basket {
+  padding: 10px 15px 10px 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 35px;
+  margin-right: 10px;
+}
+main #portfolio .wrapper .left .portfolio-about ul li .fa-laptop {
+  padding: 10px 17px 10px 8px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 35px;
+  margin-right: 10px;
+  position: relative;
+}
+main #portfolio .wrapper .left .portfolio-about ul li .fa-laptop .fa-check {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  font-size: 20px;
+}
+main #portfolio .wrapper .left .portfolio-about ul li .fa-lock {
+  padding: 10px 13px 10px 13px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 35px;
+  margin-right: 10px;
+  position: relative;
+}
+main #portfolio .wrapper .left .portfolio-about ul li p {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8rem;
+}
+main #portfolio .wrapper .left .portfolio-about ul li p span {
+  color: #000;
+}
+main #portfolio .wrapper .left .portfolio-about a {
+  color: #7cc576;
+}
+main #portfolio .wrapper .right {
+  width: 50%;
+}
+main #portfolio .wrapper .right img {
+  width: 100%;
+  height: 100%;
+}

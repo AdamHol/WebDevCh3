@@ -1,0 +1,278 @@
+@import "config";
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: #fff;
+    margin-top: 0;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 0;
+
+    .logo {
+      margin: auto 0;
+    }
+
+    ul {
+      padding: 10px 0;
+      display: flex;
+
+      li {
+        padding: 0 1.5rem;
+        border-bottom: 2px solid transparent;
+
+        a {
+          padding: 0 0 4px 0;
+        }
+        .current {
+          border-bottom: 2px solid $green;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 100px;
+  #home {
+    .main-bg {
+      background: url("../img/main-Background.png") center center no-repeat;
+      height: 50vh;
+
+      &-dark {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: inherit;
+        text-align: center;
+        width: 100%;
+
+        &-inner {
+          height: 50vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            color: #fff;
+            font-size: 4rem;
+            margin-bottom: 0;
+          }
+
+          p {
+            color: #fff;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            color: #ddd;
+          }
+        }
+      }
+    }
+  }
+  #about {
+    .container {
+      text-align: center;
+
+      .title {
+        h2 {
+          font-weight: bold;
+          padding-top: 2rem;
+          margin-bottom: 0;
+        }
+        p {
+          color: $grey;
+          margin-top: 0;
+          font-weight: bold;
+        }
+      }
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem auto 4rem;
+
+        .about-services {
+          width: 30%;
+
+          i {
+            margin-bottom: 1rem;
+          }
+
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  #blog {
+    color: #fff;
+    .bg {
+      display: flex;
+
+      .left {
+        width: 25%;
+        background: #eee;
+        position: relative;
+        z-index: -1;
+
+        img {
+          position: absolute;
+          height: 80%;
+          width: 400px;
+          right: -200px;
+          top: 10%;
+        }
+      }
+
+      .right {
+        background: url("../img/blog-bg.png") no-repeat center center/cover;
+        width: 75%;
+
+        &-dark {
+          background: rgba(0, 0, 0, 0.7);
+          text-align: left;
+          padding-top: 50px;
+          padding-left: 50px;
+
+          h2 {
+            margin-bottom: 1rem;
+            line-height: 2rem;
+
+            span {
+              color: $green;
+            }
+          }
+
+          p {
+            width: 80%;
+            color: #cccccc;
+            line-height: 1.2rem;
+          }
+
+          ul {
+            color: #cccccc;
+            margin: 1.5rem 0;
+            line-height: 2rem;
+            font-size: 1rem;
+
+            li {
+              display: flex;
+              padding-top: 10px;
+
+              .far {
+                margin-right: 20px;
+              }
+            }
+          }
+          .btn {
+            margin: 50px 0;
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    .title {
+      text-align: center;
+      font-weight: bold;
+      margin: 50px 0;
+      p {
+        color: #777777;
+      }
+    }
+    .wrapper {
+      display: flex;
+      .left {
+        width: 50%;
+        .portfolio-about {
+          h3 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+
+          p {
+            color: #777777;
+            margin: 20px 0;
+          }
+          ul {
+            li {
+              display: flex;
+
+              .fa-shopping-basket {
+                padding: 10px 15px 10px 10px;
+                border: 2px solid black;
+                border-radius: 50%;
+                width: 30px;
+                height: 35px;
+                margin-right: 10px;
+              }
+
+              .fa-laptop {
+                padding: 10px 17px 10px 8px;
+                border: 2px solid black;
+                border-radius: 50%;
+                width: 30px;
+                height: 35px;
+                margin-right: 10px;
+                position: relative;
+
+                .fa-check {
+                  position: absolute;
+                  top: 13px;
+                  left: 18px;
+                  font-size: 20px;
+                }
+              }
+
+              .fa-lock {
+                padding: 10px 13px 10px 13px;
+                border: 2px solid black;
+                border-radius: 50%;
+                width: 30px;
+                height: 35px;
+                margin-right: 10px;
+                position: relative;
+              }
+              p {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                line-height: 0.8rem;
+
+                span {
+                  color: #000;
+                }
+              }
+            }
+          }
+          a {
+            color: $green;
+          }
+        }
+      }
+      .right {
+        width: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
