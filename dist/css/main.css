@@ -254,6 +254,37 @@ main #portfolio .wrapper .right img {
   width: 100%;
   height: 100%;
 }
+main #values {
+  background: #eee;
+  text-align: center;
+  padding-top: 1rem;
+}
 main #values h2 {
-  font-size: 2rem;
+  margin-top: 3rem;
+}
+main #values p {
+  margin-bottom: 3rem;
+}
+main #values .flex-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #values .flex-icons .line {
+  width: 10rem;
+  height: 2px;
+  border: 1px solid #777777;
+  margin-top: 2rem;
+}
+main #values .flex-icons .values-icons {
+  display: table;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+main #values .flex-icons .values-icons i {
+  font-size: 2.5rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
