@@ -451,41 +451,61 @@ main {
 }
 
 #footer {
-  display: flex;
-  justify-content: space-evenly;
-  color: #fff;
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
 
-  .contact {
-    width: 20%;
-    padding: 3rem 0 4rem 0;
+    .contact {
+      width: 20%;
+      padding: 3rem 0 4rem 0;
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+    .posts {
+      padding: 3rem 0 4rem 0;
+    }
+    .tweets {
+      width: 20%;
+      padding: 3rem 0 4rem 0;
+    }
+    ul {
+      li {
+        display: flex;
+        margin: 20px 0;
+
+        .fas,
+        .fab,
+        .far {
+          margin-right: 10px;
+        }
+
+        a {
+          color: #fff;
+        }
+      }
+    }
     h4 {
       margin-bottom: 1rem;
     }
   }
-  .posts {
-    padding: 3rem 0 4rem 0;
-  }
-  .tweets {
-    width: 20%;
-    padding: 3rem 0 4rem 0;
-  }
-  ul {
-    li {
-      display: flex;
-      margin: 20px 0;
 
-      .fas,
-      .fab,
-      .far {
-        margin-right: 10px;
-      }
+  .links {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    line-height: 5rem;
 
-      a {
-        color: #fff;
+    .link {
+      margin-left: 4rem;
+      font-size: 2rem;
+
+      .fab {
+        color: #000;
+        padding-right: 1rem;
       }
     }
-  }
-  h4 {
-    margin-bottom: 1rem;
   }
 }

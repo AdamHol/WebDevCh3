@@ -395,37 +395,52 @@ main #logos img:last-child {
   margin-right: 0;
 }
 
-#footer {
+#footer .wrapper {
   display: flex;
   justify-content: space-evenly;
   color: #fff;
 }
-#footer .contact {
+#footer .wrapper .contact {
   width: 20%;
   padding: 3rem 0 4rem 0;
 }
-#footer .contact h4 {
+#footer .wrapper .contact h4 {
   margin-bottom: 1rem;
 }
-#footer .posts {
+#footer .wrapper .posts {
   padding: 3rem 0 4rem 0;
 }
-#footer .tweets {
+#footer .wrapper .tweets {
   width: 20%;
   padding: 3rem 0 4rem 0;
 }
-#footer ul li {
+#footer .wrapper ul li {
   display: flex;
   margin: 20px 0;
 }
-#footer ul li .fas,
-#footer ul li .fab,
-#footer ul li .far {
+#footer .wrapper ul li .fas,
+#footer .wrapper ul li .fab,
+#footer .wrapper ul li .far {
   margin-right: 10px;
 }
-#footer ul li a {
+#footer .wrapper ul li a {
   color: #fff;
 }
-#footer h4 {
+#footer .wrapper h4 {
   margin-bottom: 1rem;
+}
+#footer .links {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  line-height: 5rem;
+}
+#footer .links .link {
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+#footer .links .link .fab {
+  color: #000;
+  padding-right: 1rem;
 }
