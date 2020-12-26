@@ -406,4 +406,31 @@ main {
       }
     }
   }
+  #contact {
+    background: $green;
+    text-align: center;
+    padding: 4rem;
+    color: #fff;
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .btn {
+      width: 150px;
+      height: 3rem;
+      border: 2px solid #fff;
+      border-radius: 10px;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: rgb(39, 204, 39);
+        border-color: rgb(170, 165, 165);
+        cursor: pointer;
+      }
+    }
+  }
 }

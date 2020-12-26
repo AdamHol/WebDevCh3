@@ -357,3 +357,27 @@ main #clients .comments .comment:last-child .full-comment::before {
   border-width: 8px 0px 8px 16px;
   border-color: transparent transparent transparent #eee;
 }
+main #contact {
+  background: #7cc576;
+  text-align: center;
+  padding: 4rem;
+  color: #fff;
+}
+main #contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+main #contact .btn {
+  width: 150px;
+  height: 3rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+main #contact .btn:active, main #contact .btn:focus {
+  outline: none;
+}
+main #contact .btn:hover {
+  background-color: #27cc27;
+  border-color: #aaa5a5;
+  cursor: pointer;
+}
