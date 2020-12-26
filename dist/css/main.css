@@ -1,7 +1,7 @@
 .container {
   max-width: 1000px;
   margin: 2rem auto;
-  padding: 0 4rem;
+  padding: 0 auto;
 }
 
 body li {
@@ -188,9 +188,10 @@ main #portfolio .title p {
 }
 main #portfolio .wrapper {
   display: flex;
+  justify-content: flex-end;
 }
 main #portfolio .wrapper .left {
-  width: 50%;
+  width: 45%;
 }
 main #portfolio .wrapper .left .portfolio-about h3 {
   font-size: 1rem;
@@ -248,14 +249,14 @@ main #portfolio .wrapper .left .portfolio-about a {
   color: #7cc576;
 }
 main #portfolio .wrapper .right {
-  width: 50%;
+  width: 45%;
 }
 main #portfolio .wrapper .right img {
   width: 100%;
   height: 100%;
 }
 main #values {
-  background: #eee;
+  background: #fafafa;
   text-align: center;
   padding-top: 1rem;
 }
@@ -268,18 +269,21 @@ main #values p {
 main #values .flex-icons {
   display: flex;
   justify-content: space-evenly;
+  max-width: 740px;
+  margin: 0 auto 1rem auto;
+  color: #e3e3e3;
 }
 main #values .flex-icons .line {
   width: 10rem;
   height: 2px;
-  border: 1px solid #777777;
+  border: 1px solid #e3e3e3;
   margin-top: 2rem;
 }
 main #values .flex-icons .values-icons {
   display: table;
   width: 70px;
   height: 70px;
-  border: 1px solid #000;
+  border: 1px solid #e3e3e3;
   border-radius: 50%;
 }
 main #values .flex-icons .values-icons i {
@@ -287,4 +291,69 @@ main #values .flex-icons .values-icons i {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+main #values .flex-text {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  justify-content: space-between;
+}
+main #values .flex-text .value1,
+main #values .flex-text .value2,
+main #values .flex-text .value3 {
+  max-width: 300px;
+}
+main #clients .title {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+main #clients .comments {
+  display: flex;
+  flex-direction: column;
+}
+main #clients .comments .comment img {
+  border-radius: 50%;
+}
+main #clients .comments .comment:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+}
+main #clients .comments .comment:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+main #clients .comments .full-comment {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+  margin: 1rem 2rem;
+  padding: 0 1rem;
+  position: relative;
+}
+main #clients .comments .full-comment:before {
+  content: "";
+  position: absolute;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #eee transparent transparent;
+}
+main #clients .comments .full-comment .text {
+  margin-bottom: 10px;
+}
+main #clients .comments .full-comment .who {
+  color: #7cc576;
+}
+main #clients .comments .comment:last-child .full-comment::before {
+  left: 100%;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent transparent transparent #eee;
 }
