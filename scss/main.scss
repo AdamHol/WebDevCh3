@@ -41,11 +41,14 @@ header {
 
       li {
         padding: 0 1.5rem;
-        border-bottom: 2px solid transparent;
 
         a {
           padding: 0 0 4px 0;
           color: $grey;
+
+          &:hover {
+            border-bottom: 2px solid $green;
+          }
         }
         .current {
           border-bottom: 2px solid $green;

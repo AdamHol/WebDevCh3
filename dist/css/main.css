@@ -68,11 +68,13 @@ header .container ul {
 }
 header .container ul li {
   padding: 0 1.5rem;
-  border-bottom: 2px solid transparent;
 }
 header .container ul li a {
   padding: 0 0 4px 0;
   color: #777777;
+}
+header .container ul li a:hover {
+  border-bottom: 2px solid #7cc576;
 }
 header .container ul li .current {
   border-bottom: 2px solid #7cc576;
