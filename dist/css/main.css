@@ -381,3 +381,13 @@ main #contact .btn:hover {
   border-color: #aaa5a5;
   cursor: pointer;
 }
+main #logos {
+  text-align: center;
+  padding: 3rem 0;
+}
+main #logos img {
+  margin-right: 1rem;
+}
+main #logos img:last-child {
+  margin-right: 0;
+}

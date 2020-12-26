@@ -433,4 +433,16 @@ main {
       }
     }
   }
+
+  #logos {
+    text-align: center;
+    padding: 3rem 0;
+    img {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
