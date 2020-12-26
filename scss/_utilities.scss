@@ -20,4 +20,14 @@ body a {
   height: 4rem;
   width: 14rem;
   border-radius: 2rem;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 90%;
+  }
 }

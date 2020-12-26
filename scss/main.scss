@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
@@ -424,15 +429,8 @@ main {
       border: 2px solid #fff;
       border-radius: 10px;
 
-      &:active,
-      &:focus {
-        outline: none;
-      }
-
       &:hover {
         background-color: rgb(39, 204, 39);
-        border-color: rgb(170, 165, 165);
-        cursor: pointer;
       }
     }
   }
