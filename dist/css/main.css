@@ -10,7 +10,7 @@ body li {
 
 body a {
   text-decoration: none;
-  color: #777777;
+  color: #fff;
 }
 
 .btn {
@@ -72,6 +72,7 @@ header .container ul li {
 }
 header .container ul li a {
   padding: 0 0 4px 0;
+  color: #777777;
 }
 header .container ul li .current {
   border-bottom: 2px solid #7cc576;
