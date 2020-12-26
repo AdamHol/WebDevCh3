@@ -32,6 +32,7 @@ body a {
 body {
   max-width: 1200px;
   margin: 0 auto;
+  background: #222;
 }
 
 header .container {
@@ -44,9 +45,10 @@ header .container {
   max-width: 100%;
   padding: 30px 0;
   margin-bottom: 0;
+  z-index: 2;
 }
 header .container .logo {
-  margin: auto 0;
+  margin: auto 0 auto 2rem;
 }
 header .container ul {
   padding: 10px 0;
@@ -65,6 +67,7 @@ header .container ul li .current {
 
 main {
   padding-top: 100px;
+  background: #fff;
 }
 main #home .main-bg {
   background: url("../img/main-Background.png") center center no-repeat;
@@ -131,7 +134,6 @@ main #blog .bg .left {
   width: 25%;
   background: #eee;
   position: relative;
-  z-index: -1;
 }
 main #blog .bg .left img {
   position: absolute;
@@ -143,6 +145,7 @@ main #blog .bg .left img {
 main #blog .bg .right {
   background: url("../img/blog-bg.png") no-repeat center center/cover;
   width: 75%;
+  z-index: 1;
 }
 main #blog .bg .right-dark {
   background: rgba(0, 0, 0, 0.7);
@@ -390,4 +393,39 @@ main #logos img {
 }
 main #logos img:last-child {
   margin-right: 0;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+#footer .contact {
+  width: 20%;
+  padding: 3rem 0 4rem 0;
+}
+#footer .contact h4 {
+  margin-bottom: 1rem;
+}
+#footer .posts {
+  padding: 3rem 0 4rem 0;
+}
+#footer .tweets {
+  width: 20%;
+  padding: 3rem 0 4rem 0;
+}
+#footer ul li {
+  display: flex;
+  margin: 20px 0;
+}
+#footer ul li .fas,
+#footer ul li .fab,
+#footer ul li .far {
+  margin-right: 10px;
+}
+#footer ul li a {
+  color: #fff;
+}
+#footer h4 {
+  margin-bottom: 1rem;
 }
