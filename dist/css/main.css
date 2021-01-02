@@ -454,3 +454,12 @@ main #logos img:last-child {
   color: #000;
   padding-right: 1rem;
 }
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  main #values .flex-icons {
+    justify-content: normal;
+  }
+  main #values .flex-icons .line {
+    display: none;
+  }
+}

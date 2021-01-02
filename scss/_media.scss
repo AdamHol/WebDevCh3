@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  main {
+    #values {
+      .flex-icons {
+        // margin: 0;
+        justify-content: normal;
+        .line {
+          display: none;
+        }
+
+        .values-icons {
+          // margin-left: -120px;
+        }
+
+        .values-icons:last-child {
+          // margin-right: 0;
+        }
+      }
+    }
+  }
+}
