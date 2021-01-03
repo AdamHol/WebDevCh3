@@ -1,4 +1,4 @@
-@media screen and (max-width: 902px) and (min-width: 769px) {
+@media only screen and (max-width: 902px) {
   main {
     #values {
       position: relative;
@@ -40,14 +40,88 @@
       }
     }
   }
+
+  #footer {
+    .wrapper {
+      .contact {
+        ul {
+          li {
+            a {
+              max-width: 130px;
+              overflow-wrap: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-#footer {
-  .wrapper {
-    .contact {
-      ul {
-        li {
-          a {
+@media only screen and (max-width: 768px) {
+  main {
+    #about {
+      .container {
+        .wrapper {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+          .about-services {
+            width: 100%;
+            max-width: 90%;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    #values {
+      position: relative;
+      height: 700px;
+
+      .flex-icons {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 100%;
+
+        .line {
+          display: none;
+        }
+
+        .values-icons {
+          margin-bottom: 110px;
+        }
+      }
+
+      .flex-text {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .value1 {
+          margin-top: 100px;
+          max-width: 600px;
+          margin-bottom: 70px;
+        }
+
+        .value2,
+        .value3 {
+          margin-bottom: 70px;
+          max-width: 600px;
+        }
+      }
+    }
+    #logos {
+      display: none;
+    }
+  }
+
+  #footer {
+    .wrapper {
+      .posts {
+        ul {
+          li {
             max-width: 130px;
             overflow-wrap: break-word;
           }
@@ -56,6 +130,3 @@
     }
   }
 }
-
-// @media screen and (max-width: 768) and (min-width: 577) {
-// }
