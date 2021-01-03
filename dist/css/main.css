@@ -455,11 +455,43 @@ main #logos img:last-child {
   padding-right: 1rem;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 902px) and (min-width: 769px) {
+  main #values {
+    position: relative;
+    height: 700px;
+  }
   main #values .flex-icons {
-    justify-content: normal;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
   }
   main #values .flex-icons .line {
     display: none;
   }
+  main #values .flex-icons .values-icons {
+    margin-bottom: 110px;
+  }
+  main #values .flex-text {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  main #values .flex-text .value1 {
+    margin-top: 100px;
+    max-width: 600px;
+    margin-bottom: 70px;
+  }
+  main #values .flex-text .value2,
+main #values .flex-text .value3 {
+    margin-bottom: 70px;
+    max-width: 600px;
+  }
+}
+#footer .wrapper .contact ul li a {
+  max-width: 130px;
+  overflow-wrap: break-word;
 }

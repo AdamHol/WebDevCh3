@@ -1,21 +1,61 @@
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 902px) and (min-width: 769px) {
   main {
     #values {
+      position: relative;
+      height: 700px;
+
       .flex-icons {
-        // margin: 0;
-        justify-content: normal;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 100%;
+
         .line {
           display: none;
         }
 
         .values-icons {
-          // margin-left: -120px;
+          margin-bottom: 110px;
+        }
+      }
+
+      .flex-text {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .value1 {
+          margin-top: 100px;
+          max-width: 600px;
+          margin-bottom: 70px;
         }
 
-        .values-icons:last-child {
-          // margin-right: 0;
+        .value2,
+        .value3 {
+          margin-bottom: 70px;
+          max-width: 600px;
         }
       }
     }
   }
 }
+
+#footer {
+  .wrapper {
+    .contact {
+      ul {
+        li {
+          a {
+            max-width: 130px;
+            overflow-wrap: break-word;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 768) and (min-width: 577) {
+// }
