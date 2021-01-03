@@ -598,6 +598,7 @@ main #values .flex-text .value3 {
   }
   #footer .wrapper .contact ul li a {
     max-width: 88px;
+    margin-right: 15px;
   }
   #footer .wrapper .posts {
     width: 90%;
@@ -629,5 +630,13 @@ main #values .flex-text .value3 {
   }
   #footer .wrapper .tweets ul li {
     max-width: 90%;
+  }
+  #footer .links {
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+  }
+  #footer .links .link {
+    margin-left: 0;
   }
 }
