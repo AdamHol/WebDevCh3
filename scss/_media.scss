@@ -1,5 +1,16 @@
 @media only screen and (max-width: 902px) {
   main {
+    #home {
+      .main-bg {
+        &-dark {
+          &-inner {
+            h1 {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
     #values {
       position: relative;
       height: 700px;
@@ -58,7 +69,36 @@
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    header {
+      .container {
+        .logo {
+          display: none;
+        }
+        .menu {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
   main {
+    #home {
+      .main-bg {
+        &-dark {
+          &-inner {
+            h1 {
+              font-size: 2rem;
+            }
+            p {
+              margin-bottom: 1rem;
+            }
+            .btn {
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
     #about {
       .container {
         .wrapper {
@@ -73,45 +113,29 @@
         }
       }
     }
-    #values {
-      position: relative;
-      height: 700px;
 
-      .flex-icons {
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 900px;
-        width: 100%;
-
-        .line {
+    #blog {
+      .bg {
+        .left {
           display: none;
         }
-
-        .values-icons {
-          margin-bottom: 110px;
-        }
-      }
-
-      .flex-text {
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        .value1 {
-          margin-top: 100px;
-          max-width: 600px;
-          margin-bottom: 70px;
-        }
-
-        .value2,
-        .value3 {
-          margin-bottom: 70px;
-          max-width: 600px;
+        .right {
+          width: 100%;
         }
       }
     }
+
+    #portfolio {
+      .wrapper {
+        .left {
+          width: 100%;
+        }
+        .right {
+          display: none;
+        }
+      }
+    }
+
     #logos {
       display: none;
     }
@@ -124,6 +148,107 @@
           li {
             max-width: 130px;
             overflow-wrap: break-word;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    .container {
+      padding: 5px;
+      ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 0;
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  main {
+    padding-top: 50px;
+    #values {
+      margin-bottom: 5rem;
+      .flex-icons {
+        .values-icons {
+          margin-bottom: 130px;
+        }
+      }
+    }
+
+    #clients.container {
+      .comments {
+        .comment {
+          img {
+            max-width: 100px;
+            max-height: 100px;
+          }
+          .full-comment {
+            width: 100%;
+
+            &:before {
+              top: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      .contact {
+        width: 90%;
+        padding: 1rem;
+        h4 {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          justify-content: space-around;
+          li {
+            a {
+              max-width: 88px;
+            }
+          }
+        }
+        border-bottom: 1px solid $grey;
+      }
+
+      .posts {
+        width: 90%;
+        padding: 1rem;
+        h4 {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          li {
+            max-width: 90%;
+          }
+        }
+        border-bottom: 1px solid $grey;
+      }
+      .tweets {
+        width: 90%;
+        padding: 1rem;
+        h4 {
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          li {
+            max-width: 90%;
           }
         }
       }

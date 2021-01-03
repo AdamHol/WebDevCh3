@@ -456,6 +456,9 @@ main #logos img:last-child {
 }
 
 @media only screen and (max-width: 902px) {
+  main #home .main-bg-dark-inner h1 {
+    font-size: 3rem;
+  }
   main #values {
     position: relative;
     height: 700px;
@@ -497,6 +500,22 @@ main #values .flex-text .value3 {
   }
 }
 @media only screen and (max-width: 768px) {
+  body header .container .logo {
+    display: none;
+  }
+  body header .container .menu {
+    margin: 0 auto;
+  }
+
+  main #home .main-bg-dark-inner h1 {
+    font-size: 2rem;
+  }
+  main #home .main-bg-dark-inner p {
+    margin-bottom: 1rem;
+  }
+  main #home .main-bg-dark-inner .btn {
+    height: 50px;
+  }
   main #about .container .wrapper {
     flex-direction: column;
     align-items: center;
@@ -507,39 +526,17 @@ main #values .flex-text .value3 {
     max-width: 90%;
     margin-bottom: 30px;
   }
-  main #values {
-    position: relative;
-    height: 700px;
-  }
-  main #values .flex-icons {
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 900px;
-    width: 100%;
-  }
-  main #values .flex-icons .line {
+  main #blog .bg .left {
     display: none;
   }
-  main #values .flex-icons .values-icons {
-    margin-bottom: 110px;
-  }
-  main #values .flex-text {
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
+  main #blog .bg .right {
     width: 100%;
   }
-  main #values .flex-text .value1 {
-    margin-top: 100px;
-    max-width: 600px;
-    margin-bottom: 70px;
+  main #portfolio .wrapper .left {
+    width: 100%;
   }
-  main #values .flex-text .value2,
-main #values .flex-text .value3 {
-    margin-bottom: 70px;
-    max-width: 600px;
+  main #portfolio .wrapper .right {
+    display: none;
   }
   main #logos {
     display: none;
@@ -548,5 +545,89 @@ main #values .flex-text .value3 {
   #footer .wrapper .posts ul li {
     max-width: 130px;
     overflow-wrap: break-word;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .container {
+    padding: 5px;
+  }
+  header .container ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+  header .container ul li {
+    margin-bottom: 15px;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+  main #values {
+    margin-bottom: 5rem;
+  }
+  main #values .flex-icons .values-icons {
+    margin-bottom: 130px;
+  }
+  main #clients.container .comments .comment img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  main #clients.container .comments .comment .full-comment {
+    width: 100%;
+  }
+  main #clients.container .comments .comment .full-comment:before {
+    top: 30px;
+  }
+
+  #footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .wrapper .contact {
+    width: 90%;
+    padding: 1rem;
+    border-bottom: 1px solid #777777;
+  }
+  #footer .wrapper .contact h4 {
+    text-align: center;
+  }
+  #footer .wrapper .contact ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #footer .wrapper .contact ul li a {
+    max-width: 88px;
+  }
+  #footer .wrapper .posts {
+    width: 90%;
+    padding: 1rem;
+    border-bottom: 1px solid #777777;
+  }
+  #footer .wrapper .posts h4 {
+    text-align: center;
+  }
+  #footer .wrapper .posts ul {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  #footer .wrapper .posts ul li {
+    max-width: 90%;
+  }
+  #footer .wrapper .tweets {
+    width: 90%;
+    padding: 1rem;
+  }
+  #footer .wrapper .tweets h4 {
+    text-align: center;
+  }
+  #footer .wrapper .tweets ul {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  #footer .wrapper .tweets ul li {
+    max-width: 90%;
   }
 }
